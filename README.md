@@ -1,4 +1,4 @@
-# Voting guide
+# EOS Block Producer Voting guide
 This guide shows how to vote for a producer on EOS
 
 ## Get the binaries
