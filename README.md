@@ -3,7 +3,10 @@ This guide shows how to vote for a producer on EOS
 
 ## Get the binaries
 The first step is to get the recommended binaries. The recommended OS is Ubuntu 16.04 LTS and pre-build binaries are provided in this repository for users of Ubuntu.  
-If you have a Windows 10 machine you can install the Windows subsystem for Linux (along with the Ubuntu subsystem app) by following our guide here  
+Run the following commands to obtain the binaries  
+*wget https://github.com/blockgenic/binaries/raw/master/cleos*  
+*wget https://github.com/blockgenic/binaries/raw/master/cleos*  
+If you have a Windows 10 machine you can install the Windows subsystem for Linux (along with the Ubuntu subsystem app) by following our guide here then downloading the binaries:  
 https://medium.com/@blockgenic/eosio-single-node-testnet-setup-on-windows-ae7a59900e69  
 If neither option is available then you can build your own binaries by using the EOS build script buildeos.sh that we have provided in this repo. Note that it might take a while to install all the dependencies and complete the build.  
 The script builds all the EOS binaries and copies cleos and keosd (which are the binaries required for voting) to the local folder. cleos is a command line interface to EOS. keosd is a wallet daemon that securely manages private key operations based on an encrypted wallet file that contains your private key.   
