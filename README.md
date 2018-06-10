@@ -29,13 +29,12 @@ Repeat for all the private keys you need to import for all your accounts.
 First connect and verify that the node is running  
 *./cleos  --url http://api.blockgenicbp.com:8888 get info*  
 You should see info about the node such as server version etc.  
-Next ensure you can query your account by using your account name. Each EOS public key was assigned a randomly created account name. You can find the name associated with your public key by searching for your public key in the EOS snapshot. It will be a random 12 digit alphabetic name.  
-We have made the EOS snapshot available here:  
-https://raw.githubusercontent.com/blockgenic/voting/master/snapshot.csv  
+Next ensure you can query your account by using your account name. Each EOS public key was assigned a randomly created account name. You can find the name associated with your public key by running the following command replacing the EOS8fSM... public key with that of your EOS account.   
+*./cleos--url http://api.blockgenicbp.com:8888 get accounts EOS8fSM4HSohcVy2AaKP65E36j2rJsZNAcc5GhrrP2bb8DSi1gYDq*  
 Once you have the account name query your account by running the following command  
 *./cleos--url http://api.blockgenicbp.com:8888 get account accountname1*  
 You will notice that 10 EOS is left in your balance and the remaining have been evenly staked for CPU and Bandwidth. 
-Check all your accounts corresponding to all your public keys.  
+If you have multiple accounts check all your accounts corresponding to all your public keys.  
 Now you are ready to vote. The next command will vote for your chosen producer. Your private key remains on your machine and is only used to sign your vote for validation.  
 *cleos --wallet-url http://localhost:8888 --url http://api.blockgenicbp.com:8888 system voteproducer prods youraccountname1 blockgenicbp*  
 Repeat the last command for each account name associated with your account.  
