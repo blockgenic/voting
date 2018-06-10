@@ -30,6 +30,9 @@ First connect and verify that the node is running
 *./cleos  --url http://api.blockgenicbp.com:8888 get info*  
 You should see info about the node such as server version etc.  
 Next ensure you can query your account by using your account name. Each EOS public key was assigned a randomly created account name. You can find the name associated with your public key by searching for your public key in the EOS snapshot. It will be a random 12 digit alphabetic name.  
+We have made the EOS snapshot available here:  
+https://raw.githubusercontent.com/blockgenic/voting/master/snapshot.csv  
+Once you have the account name query your account by running the following command  
 *./cleos--url http://api.blockgenicbp.com:8888 get account accountname1*  
 You will notice that 10 EOS is left in your balance and the remaining have been evenly staked for CPU and Bandwidth. 
 Check all your accounts corresponding to all your public keys.  
