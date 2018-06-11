@@ -4,3 +4,7 @@ git fetch && git fetch --tags
 git checkout mainnet-1.0.2.2
 git submodule update --init --recursive
 ./eosio_build.sh
+cp build/programs/keosd/keosd ./keosd
+cp build/programs/cleos/cleos ./cleos
+
+
